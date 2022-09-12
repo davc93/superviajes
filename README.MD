@@ -1,8 +1,8 @@
 # SuperViajes
 
-Estas cansado de tener que llenar enormes cantidades de datos cuando vas a comprar un tikete y volver ha llenar los datos por que la aplicación se cayo y se quedo pegada?
+Are you tired of having to fill in huge amounts of data when you go to buy a ticket and fill in the data again because the application crashed and stayed stuck?
 
-Encuentra le viaje de tus sueño con **Super viajes** elige el destino que mas te guste , agarrra tus maletas y viajar!.
+Find the trip of your dreams with **"Super trips"**, choose the destination that you like the most, grab your bags and travel!
 
 ## **Acerca de**
 
