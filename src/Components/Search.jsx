@@ -15,12 +15,12 @@ export const Search = ({ state, send }) => {
 
   return (
     <div className='Search'>
-      <p className='Search-title title'>Busca tu destino</p>
+      <h2 className='Search-title title'>Busca tu destino</h2>
       <select id="country" className='Search-select' value={flight} onChange={handleSelectChange}>
         <option value="" disabled defaultValue>Escoge un país</option>
         {options.map((option) => <option value={option.name.common} key={option.name.common}>{option.name.common}</option>)}
       </select>
-      <button onClick={goToPassengers} disabled={flight === ''} className='Search-continue button'>Continuar</button>
+      <button onClick={goToPassengers} disabled={flight === ''} className='Search-continue button btn--primary'>Continuar</button>
     </div>
   );
 }; 

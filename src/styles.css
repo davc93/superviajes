@@ -1,3 +1,111 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+
+    --primary:#D90429;
+    --dark:#2B2D42;
+    --light:#EDF2F4;
+    --gray:#8D99AE;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat;
+        
+}
+
+h2{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+p{
+    font-size:0.875rem; 
+    font-weight: regular;
+    color: var(--dark);
+}
+
+
+
+.btn--primary{
+    font-size:0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: var(--primary);
+    color: #EDF2F4;
+    padding: 8px 20px;
+    height: fit-content;
+    width: fit-content;
+}
+.btn--secondary{
+    font-size:0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: lightsalmon;
+    color: #EDF2F4;
+    padding: 8px 20px;
+    width: fit-content;
+    height: fit-content;
+
+}
+select{
+    border-radius: 10px;
+    background: lightsalmon;
+    height: 40px;
+    border: 3px solid lightsalmon;
+    outline: none;
+    width: 300px;
+}
+input{
+
+    width: 300px;
+    outline: none;
+    background: lightsalmon;
+    border: 2px solid white;
+
+}
+input::placeholder{
+    color: black;
+}
+
+@media (max-width:768px) {
+    body{
+        background-position: top 0 right -150px;
+    }
+}
+@media (min-width:769px){
+    body{
+        background-size: cover;
+        background-position: bottom 0;
+    }
+}
+
+
+#root{
+    background:#edf2f4bc;
+    padding:40px;
+    margin:20px;
+    position:absolute;
+    top:30vh;
+    display:grid;
+    place-content:center;
+    max-width:600px;
+}
+nav{
+    top:-150px;
+    right: 0px;
+    position:absolute;
+}
+
+.Welcome, .Search, .Tickets, .Passengers{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.StepsLayout .btn--primary, .btn--secondary{
+
+    margin-top:20px;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Passengers.css'
 export const Passengers = ({ state, send }) => {
   const [value, changeValue] = useState('');
 
@@ -21,7 +21,7 @@ export const Passengers = ({ state, send }) => {
 
   return (
     <form onSubmit={submit} className='Passengers'>
-      <p className='Passengers-title title'>Agrega a las personas que van a volar ✈️</p>
+      <h2 className='Passengers-title title'>Agrega a las personas con las que vas de aventura</h2>
       {passengers.map((person, idx) => <p className='text' key={`person-${idx}`}>{person}</p>)}
       <input 
         id="name" 
@@ -34,13 +34,13 @@ export const Passengers = ({ state, send }) => {
       />
       <div className='Passengers-buttons'>
         <button 
-          className='Passengers-add button-secondary'
+          className='Passengers-add button-secondary btn--secondary'
           type="submit"
         >
           Agregar Pasajero
         </button>
         <button
-          className='Passenger-pay button'
+          className='Passenger-pay button btn--primary'
           type="button"
           onClick={goToTicket}
         >

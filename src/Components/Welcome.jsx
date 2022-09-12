@@ -7,9 +7,9 @@ export const Welcome = ({ send }) => {
 
   return (
     <div className='Welcome'>
-      <p className='Welcome-title title'>¡Hoy es el día!</p>
-      <p className='Welcome-description description'>Compra tu vuelo y conoce un nuevo rincón del mundo, te va a sorprender las maravillas que hay para explorar</p>
-      <button onClick={startBooking} className='Welcome-cancel button'>Comenzar</button>
+      <h2 className='Welcome-title title'>Encuentra la aventura de tu vida</h2>
+      <p className='Welcome-description description'>Sigue adelante y viaja junto a quien quieras a tu destino favorito, nosotros nos encargamos del resto</p>
+      <button onClick={startBooking} className='btn--primary'>Comenzar</button>
     </div>
   );
 }; 

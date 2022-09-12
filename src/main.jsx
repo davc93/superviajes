@@ -12,11 +12,3 @@ root.render(
 </React.StrictMode>
 )
 
-// Antigua forma de renderizar
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-

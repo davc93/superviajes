@@ -7,17 +7,16 @@ export const Tickets = ({ send, context }) => {
 
   return (
     <div className='Tickets'>
-      <p className='Tickets-description description'>Gracias por volar con book a fly 💚</p>
+      <h2 className='Tickets-description description'>Gracias por volar con Super viajes</h2>
       <div className='Tickets-ticket'>
-        <div className='Tickets-country'>Colombia</div>
+        <div className='Tickets-country'>Disfruta tu viaje a {context.selectedCountry}</div>
         <div className='Tickets-passengers'>
-          <span>✈</span>
           {context.passengers.map((person, idx) => {
             return <p key={idx}>{person}</p>
           })}
         </div>
       </div>
-      <button onClick={finish} className='Tickets-finalizar button'>Finalizar</button>
+      <button onClick={finish} className='Tickets-finalizar button btn--primary'>Finalizar</button>
     </div>
   );
 }; 
