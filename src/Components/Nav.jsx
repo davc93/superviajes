@@ -9,7 +9,7 @@ export const Nav = ({ state, send }) => {
     <nav className='Nav'>
       <h1 className='Nav-logo'>Super Viajes</h1>
       {!state.matches('initial') && !state.matches('tickets') &&
-        <button onClick={goToWelcome} className='Nav-cancel button-secondary'>Cancelar</button>
+        <button onClick={goToWelcome} className='Nav-cancel button-secondary btn--secondary'>Cancelar</button>
       }
     </nav>
   );
